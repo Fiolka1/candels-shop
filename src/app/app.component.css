@@ -1,0 +1,15 @@
+#top-footer,#menu,#down-menu{
+    background-color: #091720;
+    color: white;
+}
+#down-menu{
+    text-align: center;
+}
+#center{
+    background-color: #3A4D85;
+    color: #FAD8D9;
+}
+#footer{
+    background-color: #243456;
+    color: #0A1720;
+}
