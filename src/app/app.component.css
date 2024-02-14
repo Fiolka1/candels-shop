@@ -10,10 +10,39 @@
 #top-fotter img{
     width: 50px;
     height: 50px;
+    margin: 15px;
 }
 #menu{
     width: 100%;
     height: 20dvh;
+    color: #FCF0E0;
+}
+#select-options{
+    width: 30%;
+    height: 100%;
+    text-align: left;
+    float: left;
+}
+#menu-img{
+    width: 40%;
+    height: 100%;
+    text-align: center;
+    float: left;
+}
+#menu-img img{
+    width: 200px;
+    height: 200px;
+}
+#login{
+    width: 30%;
+    height: 100%;
+    text-align: right;
+    float: right;
+}
+select,option{
+    color: #FCF0E0;
+    border: none;
+    background-color: #091720;
 }
 #down-menu{
     text-align: center;
@@ -34,4 +63,7 @@
     height: 10dvh;
     width: 100%;
     float: left;
+}
+.option-group{
+    text-decoration: underline;
 }
