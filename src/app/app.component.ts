@@ -9,6 +9,8 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  
+  bumbaba(){
+    console.log("działa")
+  }
   
 }

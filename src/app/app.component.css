@@ -67,10 +67,14 @@ select,option{
     height: 10dvh;
     width: 100%;
     float: left;
-    word-spacing: 100px;
     font-size: 300%;
+    text-align: center;
 }
 .option-group{
     text-decoration: underline;
 }
-
+.words{
+    width: 25%;
+    margin: 100px;
+    text-align: center;
+}
