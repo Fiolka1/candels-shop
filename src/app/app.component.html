@@ -14,20 +14,23 @@
   <img src="assets\images\yt.png" alt="youtube" />
 </div>
 <div id="menu">
-  <div id="select-options"> 
-      <button class="Candles-bar" (click)="visibility=!visibility" >Candles</button> 
-      <div id="menu-icon"><div class="menu-icon"></div> 
-      <div class="menu-icon"></div> <div class="menu-icon"></div></div> 
-    <div>
-      <div *ngIf="visibility">
-        <p class="option-group">Shape</p>
-        <p class="candles-option">Skull candles</p>
-        <p class="candles-option">Crystal candles</p>
-        <p class="candles-option">Statue candles</p>
-        <p class="option-group">Scent</p>
-      </div>
+  <div id="select-options">
+    <button class="Candles-bar" (click)="visibility = !visibility">
+      Candles
+    </button>
+    <div id="menu-icon">
+      <div class="menu-icon"></div>
+      <div class="menu-icon"></div>
+      <div class="menu-icon"></div>
+    </div> <br> <br>
+    <div *ngIf="visibility" class="candles-group-pick">
+      <p class="option-group">Shape</p>
+      <p class="candles-option">Skull candles</p>
+      <p class="candles-option">Crystal candles</p>
+      <p class="candles-option">Statue candles</p>
+      <p class="option-group">Scent</p>
     </div>
-    
+
     <!-- <select name="" id=""> 
       <option value="return">Candels</option>
       <optgroup label="Shape" class="option-group">
@@ -42,11 +45,9 @@
         <option value="Mystical">Mystical</option>
       </optgroup>
     </select>   -->
-   
-  </div> 
+  </div>
 
   <div id="menu-img">
-    
     <img src="assets\images\IMG_1436.png" alt="fantasies" />
   </div>
   <div id="login">
@@ -54,9 +55,7 @@
   </div>
 </div>
 <div id="down-menu">make your fantasies come to life</div>
-<div id="center">
-
-</div>
+<div id="center"></div>
 <div id="footer">
   <span class="words">Refund </span> <span class="words">Newsletter </span>
   <span class="words">Contact </span> <span class="words">About us </span>

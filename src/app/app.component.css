@@ -1,104 +1,114 @@
-body{
-    margin-top: 0px;
+body {
+  margin-top: 0px;
 }
-#top-fotter,#menu,#down-menu{
-    background-color: #091720;
-    color: white;
+#top-fotter,
+#menu,
+#down-menu {
+  background-color: #091720;
+  color: white;
 }
-#top-fotter{
-    height: 10dvh;
-    width: 100%;
-    clear: both;
+#top-fotter {
+  height: 10dvh;
+  width: 100%;
+  clear: both;
 }
-#top-fotter img{
-    width: 50px;
-    height: 50px;
-    margin: 15px;
+#top-fotter img {
+  width: 50px;
+  height: 50px;
+  margin: 15px;
 }
-#menu{
-    width: 100%;
-    height: 20dvh;
-    color: #FCF0E0;
+#menu {
+  width: 100%;
+  height: 20dvh;
+  color: #fcf0e0;
 }
-#select-options{
-    width: 30%;
-    height: 100%;
-    text-align: left;
-    float: left;
+#select-options {
+  width: 30%;
+  height: 100%;
+  text-align: left;
+  float: left;
 }
-#menu-img{
-    width: 40%;
-    height: 100%;
-    text-align: center;
-    float: left;
+#menu-img {
+  width: 40%;
+  height: 100%;
+  text-align: center;
+  float: left;
 }
-#menu-img img{
-    width: 200px;
-    height: 200px;
+#menu-img img {
+  width: 200px;
+  height: 200px;
 }
-#login{
-    width: 30%;
-    height: 100%;
-    text-align: right;
-    float: right;
+#login {
+  width: 30%;
+  height: 100%;
+  text-align: right;
+  float: right;
 }
-select,option{
-    color: #FCF0E0;
-    border: none;
-    background-color: #091720;
+select,
+option {
+  color: #fcf0e0;
+  border: none;
+  background-color: #091720;
 }
-#down-menu{
-    text-align: center;
-    height: 10dvh;
-    width: 100%;
-    float: left;
+#down-menu {
+  text-align: center;
+  height: 10dvh;
+  width: 100%;
+  float: left;
 }
-#center{
-    background-color: #3A4D85;
-    color: #FAD8D9;
-    float: left;
-    height: 50dvh;
-    width: 100%;
+#center {
+  background-color: #3a4d85;
+  color: #fad8d9;
+  float: left;
+  height: 50dvh;
+  width: 100%;
 }
-#footer{
-    background-color: #243456;
-    color: #0A1720;
-    height: 10dvh;
-    width: 100%;
-    float: left;
-    font-size: 300%;
-    text-align: center;
+#footer {
+  background-color: #243456;
+  color: #0a1720;
+  height: 10dvh;
+  width: 100%;
+  float: left;
+  font-size: 300%;
+  text-align: center;
 }
-.option-group{
-    text-decoration: underline;
+.option-group {
+  text-decoration: underline;
+  font-size: 100%;
+
 }
-.words{
-    width: 25%;
-    margin: 100px;
-    text-align: center;
+.words {
+  width: 25%;
+  margin: 100px;
+  text-align: center;
 }
-.menu-icon{
-    width: 35px;
-    height: 5px;
-    background-color: #FAD8D9;
-    margin: 5px 0px;
+.menu-icon {
+  width: 35px;
+  height: 5px;
+  background-color: #fad8d9;
+  margin: 5px 0px;
 }
-#Candles-drop{
-    display: none;
+#menu-icon {
+  float: left;
 }
-#menu-icon{
-    float: left;
+.Candles-bar {
+  float: left;
+  position: relative;
+  height: 25px;
+  top: 5px;
+  border: none;
+  background-color: #091720;
+  color: #fad8d9;
+  font-size: 150%;
 }
-.Candles-bar{
-    float: left;
+.Candles-bar:hover {
+  cursor: pointer;
+}
+.candles-option {
+
+}
+.candles-group-pick{
     position: relative;
-    height: 25px;
-    top: 5px;
-    border: none;
-    background-color: #091720;
-    color: #FAD8D9;
-    font-size: 150%;
-}
-.Candles-bar:hover{
-    cursor: pointer;
+    top: 10px;
+    text-align: left;
 }
