@@ -86,3 +86,19 @@ select,option{
 #Candles-drop{
     display: none;
 }
+#menu-icon{
+    float: left;
+}
+.Candles-bar{
+    float: left;
+    position: relative;
+    height: 25px;
+    top: 5px;
+    border: none;
+    background-color: #091720;
+    color: #FAD8D9;
+    font-size: 150%;
+}
+.Candles-bar:hover{
+    cursor: pointer;
+}

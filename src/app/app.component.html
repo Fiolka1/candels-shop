@@ -15,14 +15,19 @@
 </div>
 <div id="menu">
   <div id="select-options"> 
-    <button class="Candles-bar">Candles</button> <div class="menu-icon"></div> <div class="menu-icon"></div> <div class="menu-icon"></div>
-    <div id="Candles-drop">
-      <p class="option-group">Shape</p>
-      <p class="candles-option">Skull candles</p>
-      <p class="candles-option">Crystal candles</p>
-      <p class="candles-option">Statue candles</p>
-      <p class="option-group">Scent</p>
+      <button class="Candles-bar" (click)="visibility=!visibility" >Candles</button> 
+      <div id="menu-icon"><div class="menu-icon"></div> 
+      <div class="menu-icon"></div> <div class="menu-icon"></div></div> 
+    <div>
+      <div *ngIf="visibility">
+        <p class="option-group">Shape</p>
+        <p class="candles-option">Skull candles</p>
+        <p class="candles-option">Crystal candles</p>
+        <p class="candles-option">Statue candles</p>
+        <p class="option-group">Scent</p>
+      </div>
     </div>
+    
     <!-- <select name="" id=""> 
       <option value="return">Candels</option>
       <optgroup label="Shape" class="option-group">
