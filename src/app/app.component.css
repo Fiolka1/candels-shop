@@ -72,11 +72,7 @@ option {
   font-size: 300%;
   text-align: center;
 }
-.option-group {
-  text-decoration: underline;
-  font-size: 100%;
 
-}
 .words {
   width: 25%;
   margin: 100px;
@@ -107,8 +103,17 @@ option {
 .candles-option {
 
 }
+.option-group {
+    text-decoration: underline;
+    font-size: 100%;
+  
+  }
 .candles-group-pick{
     position: relative;
     top: 10px;
     text-align: left;
+    background-color: #091720;
+    border: blue 2px solid;
+    width: 30%;
+    text-align: center;
 }
