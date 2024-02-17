@@ -12,47 +12,67 @@ export class ImagesComponent {
  
   candles=[
     {
-
       source: 'assets/images/candles/midnight-1.jpg',
-      alternate:"midnight-1",
+      alternate:"Midnight",
       description: "A mysterious blend of dark chocolate, black cherry, and whispers of moonlit roses."
     },
     {
       source: 'assets/images/candles/midnight-2.jpg',
-      alternate:"midnight-2",
+      alternate:"Midnight",
       description: "A mysterious blend of dark chocolate, black cherry, and whispers of moonlit roses."
     },
     {
       source: 'assets/images/candles/midnight-3.jpg',
-      alternate:"midnight-3",
+      alternate:"Midnight",
       description: "A mysterious blend of dark chocolate, black cherry, and whispers of moonlit roses."
     },
     {
       source: 'assets/images/candles/midnight-4.jpg',
-      alternate:"midnight-4",
-      description: "A mysterious blend of dark chocolate, black cherry, and whispers of moonlit roses."
-    },
-    {
-      source: 'assets/images/candles/midnight-1.jpg',
-      alternate:"midnight-1",
-      description: "A mysterious blend of dark chocolate, black cherry, and whispers of moonlit roses."
-    },
-    {
-      source: 'assets/images/candles/midnight-2.jpg',
-      alternate:"midnight-2",
-      description: "A mysterious blend of dark chocolate, black cherry, and whispers of moonlit roses."
-    },
-    {
-      source: 'assets/images/candles/midnight-3.jpg',
-      alternate:"midnight-3",
-      description: "A mysterious blend of dark chocolate, black cherry, and whispers of moonlit roses."
-    },
-    {
-      source: 'assets/images/candles/midnight-4.jpg',
-      alternate:"midnight-4",
+      alternate:"Midnight",
       description: "A mysterious blend of dark chocolate, black cherry, and whispers of moonlit roses."
     },
 
+    {
+      source: 'assets/images/candles/AutumnHarvest-1.jpg',
+      alternate:"Autumn Harvest",
+      description: "The comforting aroma of crisp apple, cinnamon spice, and a touch of toasted pecan."
+    },
+    {
+      source: 'assets/images/candles/AutumnHarvest-2.jpg',
+      alternate:"Autumn Harvest",
+      description: "The comforting aroma of crisp apple, cinnamon spice, and a touch of toasted pecan."
+    },
+    {
+      source: 'assets/images/candles/AutumnHarvest-3.jpg',
+      alternate:"Autumn Harvest",
+      description: "The comforting aroma of crisp apple, cinnamon spice, and a touch of toasted pecan."
+    },
+    {
+      source: 'assets/images/candles/AutumnHarvest-4.jpg',
+      alternate:"Autumn Harvest",
+      description: "The comforting aroma of crisp apple, cinnamon spice, and a touch of toasted pecan."
+    },
+
+    {
+      source: 'assets/images/candles/AutumnHarvest-1.jpg',
+      alternate:"Autumn Harvest",
+      description: "The comforting aroma of crisp apple, cinnamon spice, and a touch of toasted pecan."
+    },
+    {
+      source: 'assets/images/candles/AutumnHarvest-2.jpg',
+      alternate:"Autumn Harvest",
+      description: "The comforting aroma of crisp apple, cinnamon spice, and a touch of toasted pecan."
+    },
+    {
+      source: 'assets/images/candles/AutumnHarvest-3.jpg',
+      alternate:"Autumn Harvest",
+      description: "The comforting aroma of crisp apple, cinnamon spice, and a touch of toasted pecan."
+    },
+    {
+      source: 'assets/images/candles/AutumnHarvest-4.jpg',
+      alternate:"Autumn Harvest",
+      description: "The comforting aroma of crisp apple, cinnamon spice, and a touch of toasted pecan."
+    },
   ]
   candles_menu=[
     {
@@ -63,10 +83,11 @@ export class ImagesComponent {
   ngOnInit()
   {
     for (let index = 0; index < 8; index++) {
-      let random_candle=Math.floor(Math.random() * (8)) ;
+      let random_candle=Math.floor(Math.random() * (40)) ;
     this.candles_menu.unshift(this.candles[random_candle]);
       
     }
+    this.candles_menu.pop()
   }
   
    
