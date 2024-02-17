@@ -1,0 +1,10 @@
+#images-candle-main-page img{
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+}
+#images-candle-main-page{
+    text-align: center;
+    width: 25%;
+    float: left;
+}
