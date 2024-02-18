@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, input } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { NgFor, NgIf } from '@angular/common';
 import { ImagesComponent } from './images/images.component';
@@ -12,5 +12,6 @@ import { ImagesComponent } from './images/images.component';
 })
 export class AppComponent {
   visibility = false;
-
+  candle_option_visability=false;
+   candle_option_name=""
 }

@@ -1,5 +1,5 @@
 import { NgFor, NgIf } from '@angular/common';
-import { Component, ElementRef, ViewChild } from '@angular/core';
+import { Component, ElementRef, Input, ViewChild } from '@angular/core';
 import { OnInit } from '@angular/core';
 @Component({
   selector: 'app-images',
@@ -15,24 +15,28 @@ export class ImagesComponent {
       alternate: 'Midnight',
       description:
         'A mysterious blend of dark chocolate, black cherry, and whispers of moonlit roses.',
+        race:'Sweet'
     },
     {
       source: 'assets/images/candles/midnight-2.jpg',
       alternate: 'Midnight',
       description:
         'A mysterious blend of dark chocolate, black cherry, and whispers of moonlit roses.',
+        race:'Sweet'
     },
     {
       source: 'assets/images/candles/midnight-3.jpg',
       alternate: 'Midnight',
       description:
         'A mysterious blend of dark chocolate, black cherry, and whispers of moonlit roses.',
+        race:'Sweet'
     },
     {
       source: 'assets/images/candles/midnight-4.jpg',
       alternate: 'Midnight',
       description:
         'A mysterious blend of dark chocolate, black cherry, and whispers of moonlit roses.',
+        race:'Sweet'
     },
 
     {
@@ -40,35 +44,41 @@ export class ImagesComponent {
       alternate: 'Autumn Harvest',
       description:
         'The comforting aroma of crisp apple, cinnamon spice, and a touch of toasted pecan.',
+        race:'Floral'
     },
     {
       source: 'assets/images/candles/AutumnHarvest-2.jpg',
       alternate: 'Autumn Harvest',
       description:
         'The comforting aroma of crisp apple, cinnamon spice, and a touch of toasted pecan.',
+        race:'Floral'
     },
     {
       source: 'assets/images/candles/AutumnHarvest-3.jpg',
       alternate: 'Autumn Harvest',
       description:
         'The comforting aroma of crisp apple, cinnamon spice, and a touch of toasted pecan.',
+        race:'Floral'
     },
     {
       source: 'assets/images/candles/AutumnHarvest-4.jpg',
       alternate: 'Autumn Harvest',
       description:
         'The comforting aroma of crisp apple, cinnamon spice, and a touch of toasted pecan.',
+        race:'Floral'
     },
   ];
   candles_menu = [
     {
       source: '',
       alternate: '',
+      race:''
     },
   ];
   candles_visibility_default = true;
   candles_visibility_choosen = false;
-  candles_visibility_race = false;
+  @Input() candles_visibility_race = false;
+  @Input() candle_race_name=""
   ngOnInit() {
     for (let index = 1; index < 5; index++) {
       let candle_object = {
@@ -76,6 +86,7 @@ export class ImagesComponent {
         alternate: 'Citrus Zephyr',
         description:
           ' A refreshing fusion of zesty lemon, tangy grapefruit, and a breeze of sweet orange blossom.',
+          race:'Sweet'
       };
       this.candles.push(candle_object);
     }
@@ -85,6 +96,7 @@ export class ImagesComponent {
         alternate: 'Cozy Campfire',
         description:
           'The perfect combination of smoky cedarwood, toasted marshmallows, and a touch of cinnamon spice.',
+          race:'Woody'
       };
       this.candles.push(candle_object);
     }
@@ -94,6 +106,7 @@ export class ImagesComponent {
         alternate: 'Golden Sunset',
         description:
           ' A warm and inviting mix of amber, vanilla bean, and a hint of sandalwood.',
+          race:'Floral'
       };
       this.candles.push(candle_object);
     }
@@ -103,6 +116,7 @@ export class ImagesComponent {
         alternate: 'Library Nostalgia',
         description:
           'It could capture the scent of old books, with notes of aged paper, weathered leather, and a hint of vanilla.',
+          race:'Mystical'
       };
       this.candles.push(candle_object);
     }
@@ -112,6 +126,7 @@ export class ImagesComponent {
         alternate: 'Moonlit Garden',
         description:
           ' A romantic combination of night-blooming jasmine, delicate lily of the valley, and a hint of moonflower.',
+          race:'Floral'
       };
       this.candles.push(candle_object);
     }
@@ -121,6 +136,7 @@ export class ImagesComponent {
         alternate: 'Mystic Moonstone',
         description:
           'A captivating blend of lavender, bergamot, and a sprinkle of moonlit jasmine.',
+          race:'Mystical'
       };
       this.candles.push(candle_object);
     }
@@ -130,6 +146,7 @@ export class ImagesComponent {
         alternate: 'Whimsical Dreams',
         description:
           'A magical fusion of cotton candy, sparkling lemonade, and a touch of rainbow sherbet.',
+          race:'Sweet'
       };
       this.candles.push(candle_object);
     }
@@ -139,11 +156,42 @@ export class ImagesComponent {
         alternate: 'Whispering Woods',
         description:
           ' A blend of fresh pine, crisp eucalyptus, and a touch of misty rain.',
+          race:'Floral'
+      };
+      this.candles.push(candle_object);
+    }
+    for (let index = 1; index < 5; index++) {
+      let candle_object = {
+        source: 'assets/images/candles/DeerSkull-' + [index] + '.jpg',
+        alternate: 'Deer Skull',
+        description:
+          'A classic soy candle with a delicate vanilla scent, shaped like a deer skull.',
+          race:'Skull_candles'
+      };
+      this.candles.push(candle_object);
+    }
+    for (let index = 1; index < 5; index++) {
+      let candle_object = {
+        source: 'assets/images/candles/HumanSkull-' + [index] + '.jpg',
+        alternate: 'Human Skull',
+        description:
+          'A classic soy candle with a delicate vanilla scent, shaped like a human skull.',
+          race:'Skull_candles'
+      };
+      this.candles.push(candle_object);
+    }
+    for (let index = 1; index < 5; index++) {
+      let candle_object = {
+        source: 'assets/images/candles/WolfSkull-' + [index] + '.jpg',
+        alternate: 'Wolf Skull',
+        description:
+          'A classic soy candle with a delicate vanilla scent, shaped like a wolf skull.',
+          race:'Skull_candles'
       };
       this.candles.push(candle_object);
     }
     for (let index = 0; index < 8; index++) {
-      let random_candle = Math.floor(Math.random() * 40);
+      let random_candle = Math.floor(Math.random() * 52);
       this.candles_menu.unshift(this.candles[random_candle]);
     }
     this.candles_menu.pop();
@@ -159,5 +207,8 @@ export class ImagesComponent {
         this.choosen_candleDescription = this.candles[index].description;
       }
     }
+    console.log(this.candles_visibility_race)
+    console.log(this.candle_race_name)
   }
+  
 }

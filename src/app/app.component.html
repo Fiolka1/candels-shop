@@ -25,7 +25,7 @@
     </div> <br> <br>
     <div *ngIf="visibility" class="candles-group-pick">
       <p class="option-group">Shape</p>
-      <p class="candles-option">Skull candles</p>
+      <p class="candles-option" (click)="candle_option_visability=true; candle_option_name='Skull_candles'">Skull candles</p>
       <p class="candles-option">Crystal candles</p>
       <p class="candles-option">Statue candles</p>
       <p class="option-group">Scent</p>
@@ -61,7 +61,7 @@
 <div id="down-menu">make your fantasies come to life</div>
 <div id="center">
  
-  <app-images></app-images>
+  <app-images [candles_visibility_race]="candle_option_visability" [candle_race_name]="candle_option_name"></app-images>
 </div>
 <div id="footer">
   <span class="words">Refund </span> <span class="words">Newsletter </span>
