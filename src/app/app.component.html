@@ -25,14 +25,14 @@
     </div> <br> <br>
     <div *ngIf="visibility" class="candles-group-pick">
       <p class="option-group">Shape</p>
-      <p class="candles-option" (click)="candle_option_visability=true; candle_option_name='Skull_candles'">Skull candles</p>
-      <p class="candles-option">Crystal candles</p>
-      <p class="candles-option">Statue candles</p>
+      <p class="candles-option" (click)="changeVisibility($event)">Skull candles</p>
+      <p class="candles-option"(click)="changeVisibility($event)">Crystal candles</p>
+      <p class="candles-option"(click)="changeVisibility($event)">Statue candles</p>
       <p class="option-group">Scent</p>
-      <p class="candles-option">Woody</p>
-      <p class="candles-option">Floral</p>
-      <p class="candles-option">Sweet</p>
-      <p class="candles-option">Mystical</p>
+      <p class="candles-option"(click)="changeVisibility($event)">Woody</p>
+      <p class="candles-option"(click)="changeVisibility($event)">Floral</p>
+      <p class="candles-option"(click)="changeVisibility($event)">Sweet</p>
+      <p class="candles-option"(click)="changeVisibility($event)">Mystical</p>
     </div>
 
     <!-- <select name="" id=""> 

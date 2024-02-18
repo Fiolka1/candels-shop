@@ -75,8 +75,8 @@ export class ImagesComponent {
       race:''
     },
   ];
-  candles_visibility_default = true;
-  candles_visibility_choosen = false;
+  @Input() candles_visibility_default = true;
+  @Input() candles_visibility_choosen = false;
   @Input() candles_visibility_race = false;
   @Input() candle_race_name=""
   ngOnInit() {
@@ -208,7 +208,7 @@ export class ImagesComponent {
       }
     }
     console.log(this.candles_visibility_race)
-    console.log(this.candle_race_name)
+    console.log(this.candle_race_name+'something')
   }
   
 }

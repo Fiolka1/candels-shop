@@ -13,5 +13,13 @@ import { ImagesComponent } from './images/images.component';
 export class AppComponent {
   visibility = false;
   candle_option_visability=false;
-   candle_option_name=""
+  candle_option_name=""
+  changeVisibility(event:any)
+  {
+    this.candle_option_visability=true;
+    let values=event;
+    this.candle_option_name=values.srcElement.innerHTML;
+    console.log(values.srcElement.innerHTML)
+    // document.getElementById()?.innerHTML
+  }
 }

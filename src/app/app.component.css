@@ -116,3 +116,6 @@ option {
     width: 30%;
     text-align: center;
 }
+.candles-option{
+  cursor: pointer;
+}
