@@ -26,7 +26,7 @@
   background-color: #DBABC3;
   width: 50%;
   height: 349.2px;
-  color: #6C4F65;
+  color: #071820;
   float: left;
   
 }
@@ -34,4 +34,28 @@
 margin: 50px;
 width: 80%;
 height: 100%;
+}
+#exit{
+  font-size: 300%;
+  text-align: right;
+}
+#exit:hover{
+  cursor: pointer;
+}
+#description{
+  font-size: 200%;
+  text-align: center;
+}
+#add_to_cart{
+  text-align: right;
+  
+}
+#add_to_cart button{
+  background-color: #071820;
+  color: #FAEEE2;
+  border: none;
+  font-size: 200%;
+}
+#add_to_cart button:hover{
+  cursor: pointer;
 }

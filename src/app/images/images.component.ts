@@ -66,9 +66,9 @@ export class ImagesComponent {
       alternate: '',
     },
   ];
-  candles_visibility_default=true;
-  candles_visibility_choosen=false;
-  candles_visibility_race=false;
+  candles_visibility_default = true;
+  candles_visibility_choosen = false;
+  candles_visibility_race = false;
   ngOnInit() {
     for (let index = 1; index < 5; index++) {
       let candle_object = {
@@ -148,10 +148,16 @@ export class ImagesComponent {
     }
     this.candles_menu.pop();
   }
-  choosen_candle="";
+  choosen_candleURL = '';
+  choosen_candleDescription = '';
   candleFull(ewent: any) {
     let candleNames = ewent;
-    this.choosen_candle=candleNames;
+    this.choosen_candleURL = candleNames;
     console.log(candleNames);
+    for (let index = 0; index < this.candles.length; index++) {
+      if (this.choosen_candleURL === this.candles[index].source) {
+        this.choosen_candleDescription = this.candles[index].description;
+      }
+    }
   }
 }

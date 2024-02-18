@@ -1,5 +1,5 @@
 <span id="candles-center" *ngIf="candles_visibility_default">
-    <h1 style="text-align: center;">Top hits </h1>
+  <h1 style="text-align: center">Top hits</h1>
   <div id="images-candle-main-page" *ngFor="let candle of candles_menu">
     <img
       [src]="candle.source"
@@ -7,24 +7,33 @@
       [name]="candle.alternate"
       (click)="
         candleFull(candle.source);
-        candles_visibility_default = !candles_visibility_default; candles_visibility_choosen=!candles_visibility_choosen
+        candles_visibility_default = false;
+        candles_visibility_choosen = true
       "
     />
     <p>{{ candle.alternate }}</p>
   </div>
 </span>
 <span id="" *ngIf="candles_visibility_choosen">
-    <div id="choosen_div">
-        <div id="choosen_candle">
-            <img [src]="choosen_candle" alt="Wybrana świeczka">
-        </div>
-        <div id="choosen_candle_description">
-            <div>
-                <p id="description">
-                    {{candles[0].description}}
-                </p>
-            </div>
-            
-        </div>
+  <div id="choosen_div">
+    <div id="choosen_candle">
+      <img [src]="choosen_candleURL" alt="Wybrana świeczka" />
     </div>
- </span>
+    <div id="choosen_candle_description">
+      <div id="exit">
+        <span
+        (click)="
+          candles_visibility_default = true;
+          candles_visibility_choosen = false
+        "
+        >Exit X</span>
+      </div>
+      <div id="description">
+        
+      {{ choosen_candleDescription }}
+
+      </div>
+      <div id="add_to_cart"><button>Add to cart</button></div>
+    </div>
+  </div>
+</span>
