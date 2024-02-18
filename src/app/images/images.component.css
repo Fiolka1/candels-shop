@@ -10,5 +10,28 @@
   height: 230px;
   padding: 20px;
   margin: 20px;
+}
+#choosen_candle{
+ width: 50%;
+ height: 349.2px;
+  text-align: right;
+ float: left;
+}
+#choosen_candle img{
+  width: 349.2px;
+  height: 349.2px;
+ 
+}
+#choosen_candle_description{
+  background-color: #DBABC3;
+  width: 50%;
+  height: 349.2px;
+  color: #6C4F65;
+  float: left;
   
+}
+#choosen_div{
+margin: 50px;
+width: 80%;
+height: 100%;
 }

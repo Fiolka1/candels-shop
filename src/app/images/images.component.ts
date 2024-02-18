@@ -1,10 +1,10 @@
-import { NgFor } from '@angular/common';
+import { NgFor, NgIf } from '@angular/common';
 import { Component, ElementRef, ViewChild } from '@angular/core';
 import { OnInit } from '@angular/core';
 @Component({
   selector: 'app-images',
   standalone: true,
-  imports: [NgFor],
+  imports: [NgFor, NgIf],
   templateUrl: './images.component.html',
   styleUrl: './images.component.css',
 })
@@ -66,6 +66,9 @@ export class ImagesComponent {
       alternate: '',
     },
   ];
+  candles_visibility_default=true;
+  candles_visibility_choosen=false;
+  candles_visibility_race=false;
   ngOnInit() {
     for (let index = 1; index < 5; index++) {
       let candle_object = {
@@ -144,13 +147,11 @@ export class ImagesComponent {
       this.candles_menu.unshift(this.candles[random_candle]);
     }
     this.candles_menu.pop();
-    
-
   }
-  
+  choosen_candle="";
   candleFull(ewent: any) {
     let candleNames = ewent;
+    this.choosen_candle=candleNames;
     console.log(candleNames);
-    
   }
 }

@@ -1,7 +1,30 @@
-<span id="candles-center">
-    <div  id="images-candle-main-page" *ngFor="let candle of candles_menu">
-        <img [src]="candle.source" [alt]="candle.alternate" [name]="candle.alternate" (click)="candleFull(candle.source)">
-        <p>{{candle.alternate}} </p>
-    </div>
+<span id="candles-center" *ngIf="candles_visibility_default">
+    <h1 style="text-align: center;">Top hits </h1>
+  <div id="images-candle-main-page" *ngFor="let candle of candles_menu">
+    <img
+      [src]="candle.source"
+      [alt]="candle.alternate"
+      [name]="candle.alternate"
+      (click)="
+        candleFull(candle.source);
+        candles_visibility_default = !candles_visibility_default; candles_visibility_choosen=!candles_visibility_choosen
+      "
+    />
+    <p>{{ candle.alternate }}</p>
+  </div>
 </span>
-
+<span id="" *ngIf="candles_visibility_choosen">
+    <div id="choosen_div">
+        <div id="choosen_candle">
+            <img [src]="choosen_candle" alt="Wybrana świeczka">
+        </div>
+        <div id="choosen_candle_description">
+            <div>
+                <p id="description">
+                    {{candles[0].description}}
+                </p>
+            </div>
+            
+        </div>
+    </div>
+ </span>
