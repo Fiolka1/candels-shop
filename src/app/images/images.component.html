@@ -8,7 +8,8 @@
       (click)="
         candleFull(candle.source);
         candles_visibility_default = false;
-        candles_visibility_choosen = true
+        candles_visibility_choosen = true;
+        candles_visibility_race=false;
       "
     />
     <p>{{ candle.alternate }}</p>
@@ -24,7 +25,8 @@
         <span
         (click)="
           candles_visibility_default = true;
-          candles_visibility_choosen = false
+          candles_visibility_choosen = false;
+          candles_visibility_race=false;
         "
         >Exit X</span>
       </div>
