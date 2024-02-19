@@ -190,8 +190,48 @@ export class ImagesComponent {
       };
       this.candles.push(candle_object);
     }
+    for (let index = 1; index < 5; index++) {
+      let candle_object = {
+        source: 'assets/images/candles/Crystalamethystcandle-' + [index] + '.jpg',
+        alternate: 'Amethyst Candle',
+        description:
+          'A unclassic candle with a delicate magical scent, shaped like a amethyst.',
+          race:'Crystal candles'
+      };
+      this.candles.push(candle_object);
+    }
+    for (let index = 1; index < 5; index++) {
+      let candle_object = {
+        source: 'assets/images/candles/Crystalcandle-' + [index] + '.jpg',
+        alternate: 'Crystal Candle',
+        description:
+          'A candle with a cave scent, shaped like a crystal.',
+          race:'Crystal candles'
+      };
+      this.candles.push(candle_object);
+    }
+    for (let index = 1; index < 5; index++) {
+      let candle_object = {
+        source: 'assets/images/candles/FaceStatueCandle-' + [index] + '.jpg',
+        alternate: 'Face statue',
+        description:
+          'A classic soy candle with a delicate vanilla scent, shaped like a human face.',
+          race:'Statue candles'
+      };
+      this.candles.push(candle_object);
+    }
+    for (let index = 1; index < 5; index++) {
+      let candle_object = {
+        source: 'assets/images/candles/Handstatuecandle-' + [index] + '.jpg',
+        alternate: 'Hand statue',
+        description:
+          'A honey candle with a delicate flowers scent, shaped like a human hand.',
+          race:'Statue candles'
+      };
+      this.candles.push(candle_object);
+    }
     for (let index = 0; index < 8; index++) {
-      let random_candle = Math.floor(Math.random() * 52);
+      let random_candle = Math.floor(Math.random() * 68);
       this.candles_menu.unshift(this.candles[random_candle]);
     }
     this.candles_menu.pop();

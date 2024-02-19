@@ -46,9 +46,8 @@
         candle_race.race !== candle_race_name ? { display: 'none' } : {}
       "
     >
-      <div [ngSwitch]="candle_race.race" class="candle_race_div">
+      <div class="candle_race_div">
         <img
-          *ngSwitchCase="candle_race_name"
           [src]="candle_race.source"
           [alt]="candle_race.alternate"
           (click)="
