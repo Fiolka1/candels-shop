@@ -230,8 +230,38 @@ export class ImagesComponent {
       };
       this.candles.push(candle_object);
     }
+    for (let index = 1; index < 5; index++) {
+      let candle_object = {
+        source: 'assets/images/candles/HumanLegStatueCandle-' + [index] + '.jpg',
+        alternate: 'Leg statue',
+        description:
+          'A vanilla candle with a sweat scent, shaped like a human leg.',
+          race:'Statue candles'
+      };
+      this.candles.push(candle_object);
+    }
+    for (let index = 1; index < 5; index++) {
+      let candle_object = {
+        source: 'assets/images/candles/CrystalEmeraldCandle-' + [index] + '.jpg',
+        alternate: 'Emerald candle',
+        description:
+          'A green candle with a cut grass scent, shaped like a emerald.',
+          race:'Crystal candles'
+      };
+      this.candles.push(candle_object);
+    }
+    for (let index = 1; index < 4; index++) {
+      let candle_object = {
+        source: 'assets/images/candles/CrystalRubinCandle-' + [index] + '.jpg',
+        alternate: 'Rubin candle',
+        description:
+          'A raspberry candle with a delicate strawberry scent, shaped like a rubin.',
+          race:'Crystal candles'
+      };
+      this.candles.push(candle_object);
+    }
     for (let index = 0; index < 8; index++) {
-      let random_candle = Math.floor(Math.random() * 68);
+      let random_candle = Math.floor(Math.random() * 79);
       this.candles_menu.unshift(this.candles[random_candle]);
     }
     this.candles_menu.pop();
