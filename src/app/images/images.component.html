@@ -39,6 +39,15 @@
     </div>
   </div>
 </span>
-<span *ngIf="candles_visibility_race">
+<span *ngIf="candles_visibility_race" id="candle_race">
+  <h1 style="text-align: center">{{candle_race_name}}</h1>
+  <span *ngFor="let candle_race of candles">
+    <div [ngStyle]="candle_race.race!==candle_race_name ? {'display':'none'}:{}" class="candle_race_div">
+      <div  [ngSwitch]="candle_race.race">
+        <img *ngSwitchCase="candle_race_name" [src]="candle_race.source" [alt]="candle_race.alternate">
+      </div>
+    </div>
+  </span>
   
+
 </span>

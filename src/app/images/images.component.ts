@@ -1,10 +1,10 @@
-import { NgFor, NgIf } from '@angular/common';
+import { NgFor, NgIf, NgStyle, NgSwitch, NgSwitchCase } from '@angular/common';
 import { Component, ElementRef, Input, ViewChild } from '@angular/core';
 import { OnInit } from '@angular/core';
 @Component({
   selector: 'app-images',
   standalone: true,
-  imports: [NgFor, NgIf],
+  imports: [NgFor, NgIf,NgSwitch,NgSwitchCase,NgStyle],
   templateUrl: './images.component.html',
   styleUrl: './images.component.css',
 })
@@ -166,7 +166,7 @@ export class ImagesComponent {
         alternate: 'Deer Skull',
         description:
           'A classic soy candle with a delicate vanilla scent, shaped like a deer skull.',
-          race:'Skull_candles'
+          race:'Skull candles'
       };
       this.candles.push(candle_object);
     }
@@ -176,7 +176,7 @@ export class ImagesComponent {
         alternate: 'Human Skull',
         description:
           'A classic soy candle with a delicate vanilla scent, shaped like a human skull.',
-          race:'Skull_candles'
+          race:'Skull candles'
       };
       this.candles.push(candle_object);
     }
@@ -186,7 +186,7 @@ export class ImagesComponent {
         alternate: 'Wolf Skull',
         description:
           'A classic soy candle with a delicate vanilla scent, shaped like a wolf skull.',
-          race:'Skull_candles'
+          race:'Skull candles'
       };
       this.candles.push(candle_object);
     }
@@ -195,6 +195,7 @@ export class ImagesComponent {
       this.candles_menu.unshift(this.candles[random_candle]);
     }
     this.candles_menu.pop();
+    console.log(this.candles_visibility_choosen)
   }
   choosen_candleURL = '';
   choosen_candleDescription = '';

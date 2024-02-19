@@ -59,3 +59,16 @@ height: 100%;
 #add_to_cart button:hover{
   cursor: pointer;
 }
+.candle_race_div{
+  width: 20%;
+  height: 20%;
+  text-align: center;
+  float: left;
+  margin: 20px;
+}
+.candle_race_div img{
+  width: 50%;
+  height: 50%;
+  margin: 20px;
+  
+}

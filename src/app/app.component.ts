@@ -15,7 +15,7 @@ export class AppComponent {
   candle_option_visability=false;
   candle_option_name="";
   candle_default=true ;
-  candle_pick=true;
+  candle_pick=false;
   changeVisibility(event:any)
   {
     this.candle_option_visability=true;
