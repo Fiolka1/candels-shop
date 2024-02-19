@@ -9,7 +9,7 @@
         candleFull(candle.source);
         candles_visibility_default = false;
         candles_visibility_choosen = true;
-        candles_visibility_race=false;
+        candles_visibility_race = false
       "
     />
     <p>{{ candle.alternate }}</p>
@@ -23,31 +23,42 @@
     <div id="choosen_candle_description">
       <div id="exit">
         <span
-        (click)="
-          candles_visibility_default = true;
-          candles_visibility_choosen = false;
-          candles_visibility_race=false;
-        "
-        >Exit X</span>
+          (click)="
+            candles_visibility_default = true;
+            candles_visibility_choosen = false;
+            candles_visibility_race = false
+          "
+          >Exit X</span
+        >
       </div>
       <div id="description">
-        
-      {{ choosen_candleDescription }}
-
+        {{ choosen_candleDescription }}
       </div>
       <div id="add_to_cart"><button>Add to cart</button></div>
     </div>
   </div>
 </span>
 <span *ngIf="candles_visibility_race" id="candle_race">
-  <h1 style="text-align: center">{{candle_race_name}}</h1>
+  <h1 style="text-align: center">{{ candle_race_name }}</h1>
   <span *ngFor="let candle_race of candles">
-    <div [ngStyle]="candle_race.race!==candle_race_name ? {'display':'none'}:{}" class="candle_race_div">
-      <div  [ngSwitch]="candle_race.race">
-        <img *ngSwitchCase="candle_race_name" [src]="candle_race.source" [alt]="candle_race.alternate">
+    <div
+      [ngStyle]="
+        candle_race.race !== candle_race_name ? { display: 'none' } : {}
+      "
+    >
+      <div [ngSwitch]="candle_race.race" class="candle_race_div">
+        <img
+          *ngSwitchCase="candle_race_name"
+          [src]="candle_race.source"
+          [alt]="candle_race.alternate"
+          (click)="
+            candleFull(candle_race.source);
+            candles_visibility_default = false;
+            candles_visibility_choosen = true;
+            candles_visibility_race = false
+          "
+        />
       </div>
     </div>
   </span>
-  
-
 </span>
