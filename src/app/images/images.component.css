@@ -87,7 +87,7 @@ height: 100%;
 }
 #candle_background{
   background-color: #647099;
-  width: 100%;
-  height: 100%;
-  
+  width: 90%;
+  height: 90%;
+  margin-left: 5%;
 }
