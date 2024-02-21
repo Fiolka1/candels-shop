@@ -117,6 +117,7 @@ option {
     border: #fad8d9 2px solid;
     text-align: center;
     width: 30%;
+    left: 42px;
 }
 .candles-option{
   cursor: pointer;
