@@ -82,12 +82,14 @@ height: 100%;
   text-align: center;
   background-color: #071820;
   width: 50%;
-  position: relative;
   left: 24%;
+  font-size: 200%;
+  margin: 0px;
+  margin-left: 25%;
 }
 #candle_background{
   background-color: #647099;
   width: 90%;
-  height: 90%;
+  height: 100%;
   margin-left: 5%;
 }
