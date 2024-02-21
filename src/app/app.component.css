@@ -6,6 +6,7 @@ body {
 #down-menu {
   background-color: #091720;
   color: white;
+  
 }
 #top-fotter {
   height: 10dvh;
@@ -105,6 +106,7 @@ option {
 .option-group {
     text-decoration: underline;
     font-size: 300%;
+    margin: 24px;
   
   }
 .candles-group-pick{
@@ -112,13 +114,15 @@ option {
     top: 10px;
     text-align: left;
     background-color: #091720;
-    border: blue 2px solid;
-    width: 50%;
+    border: #fad8d9 2px solid;
     text-align: center;
+    width: 30%;
 }
 .candles-option{
   cursor: pointer;
   font-size: 150%;
+  padding: 0px;
+  margin: 10px;
 }
 #login img{
   width: 10%;
