@@ -95,7 +95,7 @@ option {
 #menu-icon {
   float: left;
   position: relative;
-  top: 20px;
+  top: 30px;
 }
 .Candles-bar {
   float: left;
@@ -105,7 +105,7 @@ option {
   border: none;
   background-color: #091720;
   color: #fad8d9;
-  font-size: 300%;
+  font-size: 400%;
 }
 .Candles-bar:hover {
   cursor: pointer;
@@ -136,4 +136,8 @@ option {
 #login img{
   width: 10%;
   height: 10%;
+}
+#login h1{
+  margin: 0px;
+  margin-bottom: 10%;
 }
