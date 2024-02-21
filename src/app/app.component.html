@@ -15,9 +15,9 @@
 </div>
 <div id="menu">
   <div id="select-options">
-    <button class="Candles-bar" (click)="visibility = !visibility">
+    <span class="Candles-bar" (click)="visibility = !visibility">
       Candles
-    </button>
+    </span>
     <div id="menu-icon">
       <div class="menu-icon"></div>
       <div class="menu-icon"></div>
@@ -55,11 +55,13 @@
     <img src="assets\images\logo.png" alt="fantasies" />
   </div>
   <div id="login">
-    Log in <img src="assets\images\search-symbol.png" alt="search" /> 
-    <img src="assets\images\lock-icon.png" alt="lock" />
+    <h1>
+      Log in <img src="assets\images\search-symbol.png" alt="search" /> 
+      <img src="assets\images\lock-icon.png" alt="lock" />
+    </h1>
   </div>
 </div>
-<div id="down-menu">make your fantasies come to life</div>
+<div id="down-menu"> <h1>make your fantasies come to life</h1></div>
 <div id="center">
  
   <app-images [candles_visibility_race]="candle_option_visability" [candle_race_name]="candle_option_name"

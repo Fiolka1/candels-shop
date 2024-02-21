@@ -1,18 +1,20 @@
 <span id="candles-center" *ngIf="candles_visibility_default">
   <h1 class="top-hits">Top hits</h1>
-  <div id="images-candle-main-page" *ngFor="let candle of candles_menu">
-    <img
-      [src]="candle.source"
-      [alt]="candle.alternate"
-      [name]="candle.alternate"
-      (click)="
-        candleFull(candle.source);
-        candles_visibility_default = false;
-        candles_visibility_choosen = true;
-        candles_visibility_race = false
-      "
-    />
-    <p class="candle_name">{{ candle.alternate }}</p>
+  <div id="candle_background">
+    <div id="images-candle-main-page" *ngFor="let candle of candles_menu">
+      <img
+        [src]="candle.source"
+        [alt]="candle.alternate"
+        [name]="candle.alternate"
+        (click)="
+          candleFull(candle.source);
+          candles_visibility_default = false;
+          candles_visibility_choosen = true;
+          candles_visibility_race = false
+        "
+      />
+      <p class="candle_name">{{ candle.alternate }}</p>
+    </div>
   </div>
 </span>
 <span id="" *ngIf="candles_visibility_choosen">

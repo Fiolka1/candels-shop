@@ -20,7 +20,7 @@ body {
 }
 #menu {
   width: 100%;
-  height: 20dvh;
+  height: 10dvh;
   color: #fcf0e0;
 }
 #select-options {
@@ -34,6 +34,8 @@ body {
   height: 100%;
   text-align: center;
   float: left;
+  position: relative;
+  bottom: 100px;
 }
 #menu-img img {
   width: 200px;
@@ -53,15 +55,19 @@ option {
 }
 #down-menu {
   text-align: center;
-  height: 10dvh;
+  height: 5dvh;
   width: 100%;
   float: left;
+}
+#down-menu h1 {
+  position: relative;
+  bottom: 11px;
 }
 #center {
   background-color: #3a4d85;
   color: #fad8d9;
   float: left;
-  height: 50dvh;
+  height: 65dvh;
   width: 100%;
   overflow: auto;
 }
@@ -88,6 +94,8 @@ option {
 }
 #menu-icon {
   float: left;
+  position: relative;
+  top: 20px;
 }
 .Candles-bar {
   float: left;
@@ -97,7 +105,7 @@ option {
   border: none;
   background-color: #091720;
   color: #fad8d9;
-  font-size: 150%;
+  font-size: 300%;
 }
 .Candles-bar:hover {
   cursor: pointer;
@@ -111,7 +119,7 @@ option {
   }
 .candles-group-pick{
     position: relative;
-    top: 10px;
+    top: 30px;
     text-align: left;
     background-color: #091720;
     border: #fad8d9 2px solid;
