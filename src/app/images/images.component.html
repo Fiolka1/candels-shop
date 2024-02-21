@@ -1,5 +1,5 @@
 <span id="candles-center" *ngIf="candles_visibility_default">
-  <h1 style="text-align: center">Top hits</h1>
+  <h1 class="top-hits">Top hits</h1>
   <div id="images-candle-main-page" *ngFor="let candle of candles_menu">
     <img
       [src]="candle.source"
@@ -12,7 +12,7 @@
         candles_visibility_race = false
       "
     />
-    <p>{{ candle.alternate }}</p>
+    <p class="candle_name">{{ candle.alternate }}</p>
   </div>
 </span>
 <span id="" *ngIf="candles_visibility_choosen">

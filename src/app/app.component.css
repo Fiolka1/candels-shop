@@ -104,7 +104,7 @@ option {
 
 .option-group {
     text-decoration: underline;
-    font-size: 100%;
+    font-size: 300%;
   
   }
 .candles-group-pick{
@@ -113,9 +113,14 @@ option {
     text-align: left;
     background-color: #091720;
     border: blue 2px solid;
-    width: 30%;
+    width: 50%;
     text-align: center;
 }
 .candles-option{
   cursor: pointer;
+  font-size: 150%;
+}
+#login img{
+  width: 10%;
+  height: 10%;
 }

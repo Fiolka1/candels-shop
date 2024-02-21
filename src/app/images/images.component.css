@@ -73,3 +73,14 @@ height: 100%;
   cursor: pointer;
   
 }
+.top-hits{
+  text-align: center;
+  font-size: 600%;
+}
+.candle_name{
+  text-align: center;
+  background-color: #071820;
+  width: 50%;
+  position: relative;
+  left: 24%;
+}
