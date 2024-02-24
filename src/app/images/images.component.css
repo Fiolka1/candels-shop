@@ -24,7 +24,7 @@
 }
 #choosen_candle_description{
   background-color: #DBABC3;
-  width: 50%;
+  width: 30%;
   height: 349.2px;
   color: #071820;
   float: left;
@@ -39,25 +39,28 @@ height: 100%;
   font-size: 300%;
   text-align: right;
 }
-#exit:hover{
+#exit span:hover{
   cursor: pointer;
 }
 #description{
   font-size: 200%;
   text-align: center;
   padding: 5%;
+  
 }
 #add_to_cart{
   text-align: center;
+  width: 50%;
   
 }
-#add_to_cart button{
+#add_to_cart{
   background-color: #071820;
   color: #FAEEE2;
   border: none;
-  font-size: 200%;
+  font-size: 300%;
+  margin-left: 25%;
 }
-#add_to_cart button:hover{
+#add_to_cart:hover{
   cursor: pointer;
 }
 .candle_race_div{
