@@ -15,28 +15,32 @@ export class ImagesComponent {
       alternate: 'Midnight',
       description:
         'A mysterious blend of dark chocolate, black cherry, and whispers of moonlit roses.',
-        race:'Sweet'
+        race:'Sweet',
+        keyNotes:'blend of dark chocolate, black cherry,moonlit roses'
     },
     {
       source: 'assets/images/candles/midnight-2.jpg',
       alternate: 'Midnight',
       description:
         'A mysterious blend of dark chocolate, black cherry, and whispers of moonlit roses.',
-        race:'Sweet'
+        race:'Sweet',
+        keyNotes:'blend of dark chocolate, black cherry,moonlit roses'
     },
     {
       source: 'assets/images/candles/midnight-3.jpg',
       alternate: 'Midnight',
       description:
         'A mysterious blend of dark chocolate, black cherry, and whispers of moonlit roses.',
-        race:'Sweet'
+        race:'Sweet',
+        keyNotes:'blend of dark chocolate, black cherry,moonlit roses'
     },
     {
       source: 'assets/images/candles/midnight-4.jpg',
       alternate: 'Midnight',
       description:
         'A mysterious blend of dark chocolate, black cherry, and whispers of moonlit roses.',
-        race:'Sweet'
+        race:'Sweet',
+        keyNotes:'blend of dark chocolate, black cherry,moonlit roses'
     },
 
     {
@@ -44,35 +48,40 @@ export class ImagesComponent {
       alternate: 'Autumn Harvest',
       description:
         'The comforting aroma of crisp apple, cinnamon spice, and a touch of toasted pecan.',
-        race:'Floral'
+        race:'Floral',
+        keyNotes:'aroma of crisp apple, cinnamon spice, toasted pecan'
     },
     {
       source: 'assets/images/candles/AutumnHarvest-2.jpg',
       alternate: 'Autumn Harvest',
       description:
         'The comforting aroma of crisp apple, cinnamon spice, and a touch of toasted pecan.',
-        race:'Floral'
+        race:'Floral',
+        keyNotes:'aroma of crisp apple, cinnamon spice, toasted pecan'
     },
     {
       source: 'assets/images/candles/AutumnHarvest-3.jpg',
       alternate: 'Autumn Harvest',
       description:
         'The comforting aroma of crisp apple, cinnamon spice, and a touch of toasted pecan.',
-        race:'Floral'
+        race:'Floral',
+        keyNotes:'aroma of crisp apple, cinnamon spice, toasted pecan'
     },
     {
       source: 'assets/images/candles/AutumnHarvest-4.jpg',
       alternate: 'Autumn Harvest',
       description:
         'The comforting aroma of crisp apple, cinnamon spice, and a touch of toasted pecan.',
-        race:'Floral'
+        race:'Floral',
+        keyNotes:'aroma of crisp apple, cinnamon spice, toasted pecan'
     },
   ];
   candles_menu = [
     {
       source: '',
       alternate: '',
-      race:''
+      race:'',
+      keyNotes:''
     },
   ];
   @Input() candles_visibility_default = true;
@@ -86,7 +95,8 @@ export class ImagesComponent {
         alternate: 'Citrus Zephyr',
         description:
           ' A refreshing fusion of zesty lemon, tangy grapefruit, and a breeze of sweet orange blossom.',
-          race:'Sweet'
+          race:'Sweet',
+          keyNotes:'zesty lemon, tangy grapefruit, orange blossom'
       };
       this.candles.push(candle_object);
     }
@@ -96,7 +106,8 @@ export class ImagesComponent {
         alternate: 'Cozy Campfire',
         description:
           'The perfect combination of smoky cedarwood, toasted marshmallows, and a touch of cinnamon spice.',
-          race:'Woody'
+          race:'Woody',
+          keyNotes:'smoky cedarwood, toasted marshmallows, cinnamon spice'
       };
       this.candles.push(candle_object);
     }
@@ -106,7 +117,8 @@ export class ImagesComponent {
         alternate: 'Golden Sunset',
         description:
           ' A warm and inviting mix of amber, vanilla bean, and a hint of sandalwood.',
-          race:'Floral'
+          race:'Floral',
+          keyNotes:'mix of amber, vanilla bean, sandalwood'
       };
       this.candles.push(candle_object);
     }
@@ -116,7 +128,8 @@ export class ImagesComponent {
         alternate: 'Library Nostalgia',
         description:
           'It could capture the scent of old books, with notes of aged paper, weathered leather, and a hint of vanilla.',
-          race:'Mystical'
+          race:'Mystical',
+          keyNotes:'scent of old books,'
       };
       this.candles.push(candle_object);
     }
@@ -126,7 +139,8 @@ export class ImagesComponent {
         alternate: 'Moonlit Garden',
         description:
           ' A romantic combination of night-blooming jasmine, delicate lily of the valley, and a hint of moonflower.',
-          race:'Floral'
+          race:'Floral',
+          keyNotes:'combination of jasmine, lily, moonflower'
       };
       this.candles.push(candle_object);
     }
@@ -136,7 +150,8 @@ export class ImagesComponent {
         alternate: 'Mystic Moonstone',
         description:
           'A captivating blend of lavender, bergamot, and a sprinkle of moonlit jasmine.',
-          race:'Mystical'
+          race:'Mystical',
+          keyNotes:'blend of lavender, bergamot, jasmine'
       };
       this.candles.push(candle_object);
     }
@@ -146,7 +161,8 @@ export class ImagesComponent {
         alternate: 'Whimsical Dreams',
         description:
           'A magical fusion of cotton candy, sparkling lemonade, and a touch of rainbow sherbet.',
-          race:'Sweet'
+          race:'Sweet',
+          keyNotes:'fusion of cotton candy, sparkling lemonade,rainbow sherbet'
       };
       this.candles.push(candle_object);
     }
@@ -156,7 +172,8 @@ export class ImagesComponent {
         alternate: 'Whispering Woods',
         description:
           ' A blend of fresh pine, crisp eucalyptus, and a touch of misty rain.',
-          race:'Floral'
+          race:'Floral',
+          keyNotes:'blend of fresh pine, crisp eucalyptus, misty rain'
       };
       this.candles.push(candle_object);
     }
@@ -166,7 +183,8 @@ export class ImagesComponent {
         alternate: 'Deer Skull',
         description:
           'A classic soy candle with a delicate vanilla scent, shaped like a deer skull.',
-          race:'Skull candles'
+          race:'Skull candles',
+          keyNotes:'classic soy candle'
       };
       this.candles.push(candle_object);
     }
@@ -176,7 +194,8 @@ export class ImagesComponent {
         alternate: 'Human Skull',
         description:
           'A classic soy candle with a delicate vanilla scent, shaped like a human skull.',
-          race:'Skull candles'
+          race:'Skull candles',
+          keyNotes:'human skull'
       };
       this.candles.push(candle_object);
     }
@@ -186,7 +205,8 @@ export class ImagesComponent {
         alternate: 'Wolf Skull',
         description:
           'A classic soy candle with a delicate vanilla scent, shaped like a wolf skull.',
-          race:'Skull candles'
+          race:'Skull candles',
+          keyNotes:'delicate vanilla scent'
       };
       this.candles.push(candle_object);
     }
@@ -196,7 +216,8 @@ export class ImagesComponent {
         alternate: 'Amethyst Candle',
         description:
           'A unclassic candle with a delicate magical scent, shaped like a amethyst.',
-          race:'Crystal candles'
+          race:'Crystal candles',
+          keyNotes:'magical scent'
       };
       this.candles.push(candle_object);
     }
@@ -206,7 +227,8 @@ export class ImagesComponent {
         alternate: 'Crystal Candle',
         description:
           'A candle with a cave scent, shaped like a crystal.',
-          race:'Crystal candles'
+          race:'Crystal candles',
+          keyNotes:'cave scent'
       };
       this.candles.push(candle_object);
     }
@@ -216,7 +238,8 @@ export class ImagesComponent {
         alternate: 'Face statue',
         description:
           'A classic soy candle with a delicate vanilla scent, shaped like a human face.',
-          race:'Statue candles'
+          race:'Statue candles',
+          keyNotes:'human face'
       };
       this.candles.push(candle_object);
     }
@@ -226,7 +249,8 @@ export class ImagesComponent {
         alternate: 'Hand statue',
         description:
           'A honey candle with a delicate flowers scent, shaped like a human hand.',
-          race:'Statue candles'
+          race:'Statue candles',
+          keyNotes:'human hand'
       };
       this.candles.push(candle_object);
     }
@@ -236,7 +260,8 @@ export class ImagesComponent {
         alternate: 'Leg statue',
         description:
           'A vanilla candle with a sweat scent, shaped like a human leg.',
-          race:'Statue candles'
+          race:'Statue candles',
+          keyNotes:'sweat scent'
       };
       this.candles.push(candle_object);
     }
@@ -246,7 +271,8 @@ export class ImagesComponent {
         alternate: 'Emerald candle',
         description:
           'A green candle with a cut grass scent, shaped like a emerald.',
-          race:'Crystal candles'
+          race:'Crystal candles',
+          keyNotes:'grass scent'
       };
       this.candles.push(candle_object);
     }
@@ -256,7 +282,8 @@ export class ImagesComponent {
         alternate: 'Rubin candle',
         description:
           'A raspberry candle with a delicate strawberry scent, shaped like a rubin.',
-          race:'Crystal candles'
+          race:'Crystal candles',
+          keyNotes:'strawberry scent'
       };
       this.candles.push(candle_object);
     }
@@ -269,6 +296,7 @@ export class ImagesComponent {
   }
   choosen_candleURL = '';
   choosen_candleDescription = '';
+  candle_KeyNotes=''
   candleFull(ewent: any) {
     let candleNames = ewent;
     this.choosen_candleURL = candleNames;
@@ -276,10 +304,13 @@ export class ImagesComponent {
     for (let index = 0; index < this.candles.length; index++) {
       if (this.choosen_candleURL === this.candles[index].source) {
         this.choosen_candleDescription = this.candles[index].description;
+        this.candle_KeyNotes=this.candles[index].keyNotes;
       }
     }
     console.log(this.candles_visibility_race)
     console.log(this.candle_race_name+'something')
   }
-  
+  candleSize(){
+    return Math.floor(Math.random() * 100)
+  }
 }

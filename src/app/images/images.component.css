@@ -45,9 +45,10 @@ height: 100%;
 #description{
   font-size: 200%;
   text-align: center;
+  padding: 5%;
 }
 #add_to_cart{
-  text-align: right;
+  text-align: center;
   
 }
 #add_to_cart button{
