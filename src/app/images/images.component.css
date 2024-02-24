@@ -48,6 +48,9 @@ height: 100%;
   text-align: center;
   padding: 5%;
 }
+#description h1{
+  margin: 0px;
+}
 #add_to_cart{
   text-align: center;
   width: 50%;
