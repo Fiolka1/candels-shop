@@ -47,9 +47,12 @@ height: 100%;
   font-size: 200%;
   text-align: center;
   padding: 5%;
+  position: relative;
+  bottom: 20%;
 }
 #description h1{
   margin: 0px;
+  font-size: 200%;
 }
 #add_to_cart{
   text-align: center;
