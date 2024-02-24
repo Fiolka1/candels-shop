@@ -311,6 +311,6 @@ export class ImagesComponent {
     console.log(this.candle_race_name+'something')
   }
   candleSize(){
-    return Math.floor(Math.random() * 100)
+    return Math.floor(Math.random() * 12)+13
   }
 }
