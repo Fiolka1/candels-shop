@@ -11,84 +11,84 @@
   padding: 20px;
   margin: 20px;
 }
-#choosen_candle{
- width: 50%;
- height: 349.2px;
+#choosen_candle {
+  width: 50%;
+  height: 50%;
   text-align: right;
- float: left;
+  float: left;
 }
-#choosen_candle img{
-  width: 70%;
-  height: 120%;
- 
+#choosen_candle img {
+  width: 80%;
+  height: 180%;
 }
-#choosen_candle_description{
-  background-color: #DBABC3;
+#choosen_candle_description {
+  background-color: #dbabc3;
   width: 30%;
-  height: 63.6%;
+  height: 90%;
   color: #071820;
   float: left;
-  
 }
-#choosen_div{
-margin: 50px;
-width: 80%;
-height: 100%;
+#choosen_div {
+  margin: 2%;
+  margin-left: 15%;
+  width: 80%;
+  height: 100%;
 }
-#exit{
+#exit {
   font-size: 300%;
   text-align: right;
   position: relative;
 }
-#exit span:hover{
+#exit span:hover {
   cursor: pointer;
 }
-#description{
+#description {
   font-size: 200%;
   text-align: center;
-  padding: 5%;
-  position: relative;
-  bottom: 20%;
+  /* position: relative; */
+  bottom: 15%;
+  margin: 5%;
+  margin-bottom: 0;
 }
-#description h1{
+#description h1 {
   margin: 0px;
   font-size: 200%;
 }
-#add_to_cart{
+#add_to_cart {
   text-align: center;
   width: 50%;
-  
 }
-#add_to_cart{
+#add_to_cart {
   background-color: #071820;
-  color: #FAEEE2;
+  color: #faeee2;
   border: none;
   font-size: 300%;
   margin-left: 25%;
+  /* position: relative; */
+  bottom: 13%;
 }
-#add_to_cart:hover{
+#add_to_cart:hover {
   cursor: pointer;
 }
-.candle_race_div{
+.candle_race_div {
   width: 30%;
   height: 30%;
   text-align: center;
   float: left;
   margin: 20px;
 }
-.candle_race_div img{
+.candle_race_div img {
   width: 50%;
   height: 50%;
   margin: 20px;
   cursor: pointer;
-  
 }
-.top-hits{
+.top-hits {
   text-align: center;
   font-size: 600%;
   margin-bottom: 0px;
 }
-.candle_name{
+.candle_name {
   text-align: center;
   background-color: #071820;
   width: 50%;
@@ -97,7 +97,7 @@ height: 100%;
   margin: 0px;
   margin-left: 25%;
 }
-#candle_background{
+#candle_background {
   background-color: #647099;
   width: 90%;
   height: 130%;

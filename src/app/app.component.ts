@@ -15,7 +15,7 @@ export class AppComponent {
   candle_option_visability=false;
   candle_option_name="";
   candle_default=true ;
-  candle_pick=false;
+  candle_pic=false;
   changeVisibility(event:any)
   {
     this.candle_option_visability=true;
@@ -23,8 +23,10 @@ export class AppComponent {
     this.candle_option_name=values.srcElement.innerHTML;
     console.log(values.srcElement.innerHTML)
     this.candle_default=false;
-    this.candle_pick=false;
-
+    this.candle_pic=false;
+    console.log('candle_pick '+this.candle_pic)
+    console.log('candle_option_visability'+this.candle_option_visability)
+    console.log('candle_default'+this.candle_default)
     // document.getElementById()?.innerHTML
   }
 }

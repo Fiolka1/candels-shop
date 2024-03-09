@@ -10,7 +10,8 @@
           candleFull(candle.source);
           candles_visibility_default = false;
           candles_visibility_choosen = true;
-          candles_visibility_race = false
+          candles_visibility_race = false;
+          Skull('candle-choosen');
         "
       />
       <p class="candle_name">{{ candle.alternate }}</p>
@@ -28,16 +29,17 @@
           (click)="
             candles_visibility_default = true;
             candles_visibility_choosen = false;
-            candles_visibility_race = false
+            candles_visibility_race = false;
+            Skull('candle-default');
           "
           >X</span
         >
       </div>
       <div id="description">
-        <h1>Price: {{candleSize()}}£</h1>
+        <h1>Price: {{candle_Random}}£</h1>
         {{ choosen_candleDescription }} <br>
         Key notes: {{candle_KeyNotes}} <br>
-        Size: {{candleSize()}} oz
+        Size: {{candle_Randomm}} oz
 
       </div>
       <div id="add_to_cart">Add to cart</div>
@@ -60,7 +62,8 @@
             candleFull(candle_race.source);
             candles_visibility_default = false;
             candles_visibility_choosen = true;
-            candles_visibility_race = false
+            candles_visibility_race = false;
+            Skull('candle-race');
           "
         />
       </div>

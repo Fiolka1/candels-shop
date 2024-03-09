@@ -89,6 +89,9 @@ export class ImagesComponent {
   @Input() candles_visibility_race = false;
   @Input() candle_race_name=""
   ngOnInit() {
+    console.log('candles_visibility_choosen '+this.candles_visibility_choosen)
+    console.log('candles_visibility_race '+this.candles_visibility_race)
+    console.log('candles_visibility_default '+this.candles_visibility_default)
     for (let index = 1; index < 5; index++) {
       let candle_object = {
         source: 'assets/images/candles/CitrusZephyr-' + [index] + '.jpg',
@@ -296,7 +299,9 @@ export class ImagesComponent {
   }
   choosen_candleURL = '';
   choosen_candleDescription = '';
-  candle_KeyNotes=''
+  candle_KeyNotes='';
+  candle_Random=0;
+  candle_Randomm=0;
   candleFull(ewent: any) {
     let candleNames = ewent;
     this.choosen_candleURL = candleNames;
@@ -310,7 +315,12 @@ export class ImagesComponent {
     console.log(this.candles_visibility_race)
     console.log(this.candle_race_name+'something')
   }
-  candleSize(){
-    return Math.floor(Math.random() * 13)+12
+
+  Skull(something_so_i_can_know:string){
+    
+    console.log(something_so_i_can_know)
+    console.log('candles_visibility_choosen '+this.candles_visibility_choosen)
+    console.log('candles_visibility_race '+this.candles_visibility_race)
+    console.log('candles_visibility_default '+this.candles_visibility_default)
   }
 }
